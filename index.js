@@ -10,20 +10,20 @@ var cookieSession = require('cookie-session');
 // Parse configuration
 var databaseUri = process.env.DATABASE_URI || process.env.MONGOLAB_URI;
 var serverUrl = process.env.SERVER_URL || 'http://localhost:1337/parse';
-var appId = process.env.APP_ID || 'myAppId';
-var masterKey = process.env.MASTER_KEY || 'myMasterKey';
-var restApiKey = 'myRestApiKey';
+var appId = process.env.APP_ID || 'V6UKNW47paFwucxuKtlU';
+var masterKey = process.env.MASTER_KEY || 'ABrx42jUFlh7jWhCUQdF';
+var restApiKey = 'gpmcLCYftnTorbjilSuB';
 var appName = 'nearme';
 
 // Mailgun configuration
-var apiKey = process.env.MAILGUN_API_KEY || 'YOUR_MAILGUN_API_KEY';
-var domain = process.env.MAILGUN_DOMAIN || 'YOUR_MAILGUN_DOMAIN';
+var apiKey = process.env.MAILGUN_API_KEY || 'key-081de803d2c09711d3a97648bb05fb92';
+var domain = process.env.MAILGUN_DOMAIN || 'sandbox31f333fb60204e3eb551c7c17fcaa9cf.mailgun.org';
 var fromAddress = process.env.MAILGUN_FROM_ADDRESS || 'QuanLabs <dev@quanlabs.com>';
 
 // AWS S3 configuration
-var accessKeyId = process.env.AWS_ACCESS_KEY_ID || 'YOUR_AWS_ACCESS_KEY_ID';
-var secretAccessKey = process.env.AWS_SECRET_ACCESS_KEY || 'YOUR_AWS_SECRET_ACCESS_KEY';
-var bucketName = process.env.BUCKET_NAME || 'YOUR_BUCKET_NAME';
+var accessKeyId = process.env.AWS_ACCESS_KEY_ID || 'AKIAIVLGLQJVUF3CZVQQ';
+var secretAccessKey = process.env.AWS_SECRET_ACCESS_KEY || 'MyxInOJYLU8x95qQwc2FKq6NnocdVvEJd+KWp0BF';
+var bucketName = process.env.BUCKET_NAME || 'marckos';
 
 if (!databaseUri) {
   console.log('DATABASE_URI not specified, falling back to localhost.');
