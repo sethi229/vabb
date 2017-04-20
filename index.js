@@ -250,7 +250,7 @@ app.post('/install', [urlencodedParser, isNotInstalled], function (req, res) {
 });
 
 app.get('/', function (req, res) {
-  res.redirect('/login');
+  res.redirect('/install');
 });
 
 app.get('/login', isNotAuthenticated, function (req, res) {
